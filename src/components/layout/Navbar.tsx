@@ -62,9 +62,9 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="sticky" elevation={0}>
+      <AppBar position="sticky" elevation={0} sx={{ borderBottom: `1px solid ${brandColors.borderLight}` }}>
         <Container maxWidth="lg">
-          <Toolbar disableGutters sx={{ minHeight: { xs: 68, md: 76 } }}>
+          <Toolbar disableGutters sx={{ minHeight: { xs: 60, md: 68 }, py: 0.8 }}>
             {/* Brand Official Logo */}
             <Box
               onClick={() => handleScrollTo('hero')}
@@ -72,7 +72,6 @@ export default function Navbar() {
                 display: 'flex',
                 alignItems: 'center',
                 cursor: 'pointer',
-                py: 0.5,
               }}
             >
               <Box
@@ -80,7 +79,7 @@ export default function Navbar() {
                 src="/images/logo.png"
                 alt="JIVANIRA - Pure Refreshment. A Better Tomorrow."
                 sx={{
-                  height: { xs: 40, sm: 46, md: 50 },
+                  height: { xs: 36, sm: 42, md: 46 },
                   width: 'auto',
                   objectFit: 'contain',
                   transition: 'transform 0.2s ease',
@@ -97,7 +96,8 @@ export default function Navbar() {
                 flexGrow: 1,
                 display: { xs: 'none', lg: 'flex' },
                 justifyContent: 'center',
-                gap: 0.5,
+                alignItems: 'center',
+                gap: { lg: 1, xl: 1.5 },
                 mx: 2,
               }}
             >
@@ -110,9 +110,10 @@ export default function Navbar() {
                     sx={{
                       color: isActive ? brandColors.primaryBlue : brandColors.deepNavy,
                       fontWeight: isActive ? 800 : 500,
-                      fontSize: '0.9rem',
-                      px: 1.5,
-                      py: 0.8,
+                      fontSize: '0.875rem',
+                      px: 1.4,
+                      py: 0.6,
+                      whiteSpace: 'nowrap',
                       position: 'relative',
                       '&:hover': {
                         backgroundColor: 'rgba(13, 117, 183, 0.06)',
@@ -122,9 +123,9 @@ export default function Navbar() {
                         ? {
                             content: '""',
                             position: 'absolute',
-                            bottom: 6,
-                            left: '20%',
-                            right: '20%',
+                            bottom: 2,
+                            left: '15%',
+                            right: '15%',
                             height: '2px',
                             backgroundColor: brandColors.primaryBlue,
                             borderRadius: '2px',
@@ -148,7 +149,7 @@ export default function Navbar() {
                 sx={{
                   fontWeight: 600,
                   fontSize: '0.875rem',
-                  py: 1,
+                  py: 0.9,
                   px: 2.2,
                   whiteSpace: 'nowrap',
                 }}

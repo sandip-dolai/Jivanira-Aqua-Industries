@@ -10,6 +10,8 @@ import WaterDropIcon from '@mui/icons-material/WaterDrop';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import EventAvailableOutlinedIcon from '@mui/icons-material/EventAvailableOutlined';
+import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LegalModal from '@/components/common/LegalModal';
 import { BRAND, NAV_LINKS } from '@/lib/constants';
 import { brandColors } from '@/theme/colors';
@@ -225,6 +227,32 @@ export default function Footer() {
                 <PersonOutlineIcon sx={{ color: '#64B5F6', fontSize: 20 }} />
                 <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.85)', fontSize: '0.85rem' }}>
                   Founder & Proprietor: <strong>{BRAND.proprietor}</strong>
+                </Typography>
+              </Box>
+
+              <Box sx={{ display: 'flex', gap: 1.2, mb: 1.5 }}>
+                <PhoneInTalkOutlinedIcon sx={{ color: '#64B5F6', fontSize: 20 }} />
+                <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.85)', fontSize: '0.85rem' }}>
+                  Phone:{' '}
+                  <a
+                    href={`tel:${BRAND.phoneRaw}`}
+                    style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600 }}
+                  >
+                    {BRAND.phone}
+                  </a>
+                </Typography>
+              </Box>
+
+              <Box sx={{ display: 'flex', gap: 1.2, mb: 1.5 }}>
+                <EmailOutlinedIcon sx={{ color: '#64B5F6', fontSize: 20 }} />
+                <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.85)', fontSize: '0.85rem' }}>
+                  Email:{' '}
+                  <a
+                    href={`mailto:${BRAND.email}`}
+                    style={{ color: '#FFFFFF', textDecoration: 'none', fontWeight: 600 }}
+                  >
+                    {BRAND.email}
+                  </a>
                 </Typography>
               </Box>
 

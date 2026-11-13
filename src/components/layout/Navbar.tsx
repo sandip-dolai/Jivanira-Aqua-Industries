@@ -80,7 +80,7 @@ export default function Navbar() {
                 src="/images/logo.png"
                 alt="JIVANIRA - Pure Refreshment. A Better Tomorrow."
                 sx={{
-                  height: { xs: 46, sm: 52, md: 58 },
+                  height: { xs: 40, sm: 46, md: 50 },
                   width: 'auto',
                   objectFit: 'contain',
                   transition: 'transform 0.2s ease',
@@ -95,7 +95,7 @@ export default function Navbar() {
             <Box
               sx={{
                 flexGrow: 1,
-                display: { xs: 'none', md: 'flex' },
+                display: { xs: 'none', lg: 'flex' },
                 justifyContent: 'center',
                 gap: 0.5,
                 mx: 2,
@@ -139,7 +139,7 @@ export default function Navbar() {
             </Box>
 
             {/* Right Action CTA (Desktop) */}
-            <Box sx={{ display: { xs: 'none', lg: 'flex' }, alignItems: 'center' }}>
+            <Box sx={{ display: { xs: 'none', lg: 'flex' }, alignItems: 'center', ml: 1 }}>
               <Button
                 variant="contained"
                 color="primary"
@@ -150,6 +150,7 @@ export default function Navbar() {
                   fontSize: '0.875rem',
                   py: 1,
                   px: 2.2,
+                  whiteSpace: 'nowrap',
                 }}
               >
                 Partner With Us
@@ -162,7 +163,7 @@ export default function Navbar() {
               aria-label="open drawer"
               edge="end"
               onClick={handleDrawerToggle}
-              sx={{ display: { md: 'none' }, ml: 'auto' }}
+              sx={{ display: { lg: 'none' }, ml: 'auto' }}
             >
               <MenuIcon sx={{ color: brandColors.deepNavy, fontSize: 28 }} />
             </IconButton>

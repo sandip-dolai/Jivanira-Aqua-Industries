@@ -95,7 +95,7 @@ export default function Navbar() {
             <Box
               sx={{
                 flexGrow: 1,
-                display: { xs: 'none', lg: 'flex' },
+                display: { xs: 'none', md: 'flex' },
                 justifyContent: 'center',
                 gap: 0.5,
                 mx: 2,
@@ -139,7 +139,7 @@ export default function Navbar() {
             </Box>
 
             {/* Right Action CTA (Desktop) */}
-            <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
+            <Box sx={{ display: { xs: 'none', lg: 'flex' }, alignItems: 'center' }}>
               <Button
                 variant="contained"
                 color="primary"
@@ -162,7 +162,7 @@ export default function Navbar() {
               aria-label="open drawer"
               edge="end"
               onClick={handleDrawerToggle}
-              sx={{ display: { lg: 'none' }, ml: 'auto' }}
+              sx={{ display: { md: 'none' }, ml: 'auto' }}
             >
               <MenuIcon sx={{ color: brandColors.deepNavy, fontSize: 28 }} />
             </IconButton>

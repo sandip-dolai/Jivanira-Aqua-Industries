@@ -242,7 +242,7 @@ export default function AboutSection() {
 
           <Grid container spacing={2.5}>
             {VALUES.map((val) => (
-              <Grid item xs={12} sm={6} md={2.4} key={val.title}>
+              <Grid item xs={12} sm={6} md={4} lg={2.4} key={val.title}>
                 <Card sx={{ height: '100%', p: 2 }}>
                   <CardContent sx={{ p: 1 }}>
                     <Box sx={{ mb: 1.5 }}>{val.icon}</Box>

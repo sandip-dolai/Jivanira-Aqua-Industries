@@ -124,6 +124,7 @@ export default function SustainabilitySection() {
                     position: 'absolute',
                     bottom: 12,
                     left: 12,
+                    right: { xs: 12, sm: 'auto' },
                     backgroundColor: 'rgba(21, 59, 80, 0.85)',
                     backdropFilter: 'blur(8px)',
                     color: '#FFFFFF',

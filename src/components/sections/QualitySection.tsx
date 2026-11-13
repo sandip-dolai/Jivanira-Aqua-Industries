@@ -149,7 +149,7 @@ export default function QualitySection() {
                   alt="JIVANIRA Planned 500 LPH Multi-Stage RO Plant"
                   sx={{
                     width: '100%',
-                    height: { xs: 280, md: 390 },
+                    height: { xs: 240, sm: 280, md: 390 },
                     objectFit: 'contain',
                     display: 'block',
                     borderRadius: 2,
@@ -158,8 +158,9 @@ export default function QualitySection() {
                 <Box
                   sx={{
                     position: 'absolute',
-                    bottom: 20,
-                    left: 20,
+                    bottom: { xs: 10, sm: 20 },
+                    left: { xs: 10, sm: 20 },
+                    right: { xs: 10, sm: 'auto' },
                     backgroundColor: 'rgba(21, 59, 80, 0.9)',
                     backdropFilter: 'blur(8px)',
                     color: '#FFFFFF',

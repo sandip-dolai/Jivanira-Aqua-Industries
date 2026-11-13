@@ -1,0 +1,54 @@
+/* ============================================================
+   JIVANIRA AQUA INDUSTRIES — Global CSS
+   Mobile-first reset & responsive utilities
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent long words / emails from overflowing on small screens */
+p,
+li,
+span,
+td,
+th {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Minimum tap target height for interactive elements */
+button,
+[role="button"],
+a {
+  min-height: 44px;
+}
+
+/* Keep MUI overrides minimal; let sx props handle theming */
+

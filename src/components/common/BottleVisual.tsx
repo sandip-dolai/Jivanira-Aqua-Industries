@@ -29,8 +29,8 @@ export default function BottleVisual({ volume, height = 320 }: BottleVisualProps
       <Box
         sx={{
           width: '100%',
-          maxWidth: 240,
-          height,
+          maxWidth: { xs: 200, sm: 240 },
+          height: { xs: Math.min(height, 260), sm: height },
           borderRadius: 2.5,
           overflow: 'hidden',
           backgroundColor: '#FFFFFF',

@@ -118,7 +118,7 @@ export default function HeroSection() {
                 size="large"
                 onClick={() => scrollTo('about')}
                 endIcon={<ArrowForwardIcon />}
-                sx={{ px: 3.5, py: 1.4, fontSize: '1rem' }}
+                sx={{ px: 3.5, py: 1.4, fontSize: '1rem', width: { xs: '100%', sm: 'auto' } }}
               >
                 Discover Our Brand
               </Button>
@@ -128,7 +128,7 @@ export default function HeroSection() {
                 size="large"
                 onClick={() => scrollTo('partnership')}
                 startIcon={<HandshakeOutlinedIcon />}
-                sx={{ px: 3.5, py: 1.4, fontSize: '1rem', borderWidth: 1.5 }}
+                sx={{ px: 3.5, py: 1.4, fontSize: '1rem', borderWidth: 1.5, width: { xs: '100%', sm: 'auto' } }}
               >
                 Business Enquiry
               </Button>

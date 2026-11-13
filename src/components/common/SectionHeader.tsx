@@ -51,7 +51,7 @@ export default function SectionHeader({
       <Typography
         variant="h2"
         sx={{
-          fontSize: { xs: '1.75rem', sm: '2.25rem', md: '2.75rem' },
+          fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
           fontWeight: 800,
           color: light ? '#FFFFFF' : brandColors.deepNavy,
           lineHeight: 1.2,

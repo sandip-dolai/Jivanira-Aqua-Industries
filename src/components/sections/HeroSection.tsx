@@ -28,14 +28,14 @@ export default function HeroSection() {
       sx={{
         position: 'relative',
         background: `radial-gradient(circle at 85% 15%, #E3F4FC 0%, #FFFFFF 65%, #F0F9FF 100%)`,
-        pt: { xs: 8, md: 11 },
-        pb: { xs: 8, md: 12 },
+        pt: { xs: 5, sm: 7, md: 11 },
+        pb: { xs: 6, sm: 8, md: 12 },
         borderBottom: `1px solid ${brandColors.borderLight}`,
         scrollMarginTop: 80,
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={{ xs: 6, md: 7 }} alignItems="center">
+        <Grid container spacing={{ xs: 4, sm: 5, md: 7 }} alignItems="center">
           {/* Left Hero Content */}
           <Grid item xs={12} md={6.5}>
             <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2.5 }}>
@@ -64,7 +64,7 @@ export default function HeroSection() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: '2.4rem', sm: '3.2rem', md: '3.8rem' },
+                fontSize: { xs: '2rem', sm: '2.8rem', md: '3.6rem' },
                 lineHeight: 1.15,
                 mb: 2,
                 color: brandColors.deepNavy,

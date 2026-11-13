@@ -93,7 +93,7 @@ export default function Footer() {
             </Grid>
 
             {/* Column 2: Quick Links */}
-            <Grid item xs={6} sm={4} md={2.5}>
+            <Grid item xs={12} sm={4} md={2.5}>
               <Typography
                 variant="subtitle2"
                 sx={{
@@ -132,7 +132,7 @@ export default function Footer() {
             </Grid>
 
             {/* Column 3: Legal & Information */}
-            <Grid item xs={6} sm={4} md={2}>
+            <Grid item xs={12} sm={4} md={2}>
               <Typography
                 variant="subtitle2"
                 sx={{

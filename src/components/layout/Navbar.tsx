@@ -190,7 +190,7 @@ export default function Navbar() {
             component="img"
             src="/images/logo.png"
             alt="JIVANIRA"
-            sx={{ height: 42, width: 'auto', objectFit: 'contain' }}
+            sx={{ height: 40, width: 'auto', objectFit: 'contain', cursor: 'pointer' }} onClick={() => handleScrollTo('hero')}
           />
           <IconButton onClick={handleDrawerToggle} edge="end">
             <CloseIcon sx={{ color: brandColors.deepNavy }} />

@@ -78,7 +78,7 @@ export default function QualitySection() {
       id="quality"
       component="section"
       sx={{
-        py: { xs: 8, md: 12 },
+        py: { xs: 5, sm: 7, md: 11 },
         backgroundColor: '#FFFFFF',
         scrollMarginTop: 80,
       }}

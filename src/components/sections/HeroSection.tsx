@@ -35,7 +35,7 @@ export default function HeroSection() {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={{ xs: 4, sm: 5, md: 7 }} alignItems="center">
+        <Grid container spacing={{ xs: 3, sm: 4, md: 7 }} alignItems="center">
           {/* Left Hero Content */}
           <Grid item xs={12} md={6.5}>
             <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2.5 }}>

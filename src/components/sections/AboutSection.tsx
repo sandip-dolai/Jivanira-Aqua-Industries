@@ -164,7 +164,7 @@ export default function AboutSection() {
 
         {/* Mission & Vision Cards */}
         <Grid container spacing={3.5} sx={{ mb: { xs: 6, md: 8 } }}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <Card
               sx={{
                 p: { xs: 3.5, md: 4.5 },
@@ -194,7 +194,7 @@ export default function AboutSection() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} sm={6}>
             <Card
               sx={{
                 p: { xs: 3.5, md: 4.5 },

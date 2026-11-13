@@ -54,7 +54,7 @@ export default function PreLaunchBanner() {
               gap: 0.5,
             }}
           >
-            <InfoOutlinedIcon sx={{ fontSize: 15, color: '#64B5F6' }} />
+            <InfoOutlinedIcon sx={{ fontSize: 15, color: '#64B5F6', flexShrink: 0 }} />
             Jivanira Aqua Industries is an upcoming enterprise. Planned business launch: 2027.
           </Typography>
         </Box>

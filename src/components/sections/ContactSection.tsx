@@ -279,9 +279,7 @@ export default function ContactSection({ selectedCategory = 'General Enquiry' }:
                       sx={{
                         fontWeight: 800,
                         color: brandColors.deepNavy,
-                        textOverflow: 'ellipsis',
-                        overflow: 'hidden',
-                        whiteSpace: 'nowrap',
+                        wordBreak: 'break-all',
                       }}
                     >
                       {BRAND.email}

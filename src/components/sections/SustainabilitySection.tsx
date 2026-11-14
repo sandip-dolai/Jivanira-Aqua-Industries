@@ -55,7 +55,7 @@ export default function SustainabilitySection() {
       id="sustainability"
       component="section"
       sx={{
-        py: { xs: 5, sm: 7, md: 11 },
+        py: { xs: 5, sm: 6, md: 8 }, minHeight: { md: "100vh" }, display: "flex", flexDirection: "column", justifyContent: "center",
         backgroundColor: '#F8FAF8',
         scrollMarginTop: 80,
       }}
@@ -185,3 +185,4 @@ export default function SustainabilitySection() {
     </Box>
   );
 }
+

@@ -57,7 +57,7 @@ export default function PartnershipSection({ onSelectCategory }: PartnershipSect
       id="partnership"
       component="section"
       sx={{
-        py: { xs: 5, sm: 7, md: 11 },
+        py: { xs: 5, sm: 6, md: 8 }, minHeight: { md: "100vh" }, display: "flex", flexDirection: "column", justifyContent: "center",
         backgroundColor: '#FFFFFF',
         scrollMarginTop: 80,
       }}
@@ -244,3 +244,4 @@ export default function PartnershipSection({ onSelectCategory }: PartnershipSect
     </Box>
   );
 }
+

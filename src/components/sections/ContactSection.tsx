@@ -32,7 +32,7 @@ export default function ContactSection({ selectedCategory = 'General Enquiry' }:
       id="contact"
       component="section"
       sx={{
-        py: { xs: 5, sm: 7, md: 11 },
+        py: { xs: 5, sm: 6, md: 8 }, minHeight: { md: "100vh" }, display: "flex", flexDirection: "column", justifyContent: "center",
         backgroundColor: brandColors.lightGrey,
         scrollMarginTop: 80,
       }}
@@ -308,3 +308,4 @@ export default function ContactSection({ selectedCategory = 'General Enquiry' }:
     </Box>
   );
 }
+

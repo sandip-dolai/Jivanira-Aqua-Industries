@@ -27,18 +27,20 @@ export default function HeroSection() {
       component="section"
       sx={{
         position: 'relative',
+        minHeight: { md: 'calc(100vh - 100px)' },
+        display: 'flex',
+        alignItems: 'center',
         background: `radial-gradient(circle at 85% 15%, #E3F4FC 0%, #FFFFFF 65%, #F0F9FF 100%)`,
-        pt: { xs: 5, sm: 7, md: 11 },
-        pb: { xs: 6, sm: 8, md: 12 },
+        py: { xs: 4, sm: 5, md: 4 },
         borderBottom: `1px solid ${brandColors.borderLight}`,
         scrollMarginTop: 80,
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={{ xs: 3, sm: 4, md: 7 }} alignItems="center">
+        <Grid container spacing={{ xs: 3, sm: 4, md: 5 }} alignItems="center">
           {/* Left Hero Content */}
           <Grid item xs={12} md={6.5}>
-            <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2.5 }}>
+            <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2 }}>
               <Chip
                 label="Coming in 2027"
                 color="primary"
@@ -64,9 +66,9 @@ export default function HeroSection() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: '2rem', sm: '2.8rem', md: '3.6rem' },
+                fontSize: { xs: '1.9rem', sm: '2.5rem', md: '3.2rem' },
                 lineHeight: 1.15,
-                mb: 2,
+                mb: 1.5,
                 color: brandColors.deepNavy,
               }}
             >
@@ -86,10 +88,10 @@ export default function HeroSection() {
             <Typography
               variant="h3"
               sx={{
-                fontSize: { xs: '1.25rem', md: '1.6rem' },
+                fontSize: { xs: '1.15rem', md: '1.45rem' },
                 fontWeight: 600,
                 color: brandColors.primaryBlue,
-                mb: 2.5,
+                mb: 2,
                 letterSpacing: '-0.01em',
               }}
             >
@@ -99,11 +101,11 @@ export default function HeroSection() {
             <Typography
               variant="body1"
               sx={{
-                fontSize: { xs: '1.05rem', md: '1.15rem' },
-                lineHeight: 1.75,
+                fontSize: { xs: '0.95rem', md: '1.05rem' },
+                lineHeight: 1.7,
                 color: brandColors.slateMuted,
-                maxWidth: 620,
-                mb: 4.5,
+                maxWidth: 580,
+                mb: 3.5,
               }}
             >
               A new name in everyday hydration is taking shape in West Bengal. JIVANIRA is an upcoming packaged drinking
@@ -118,7 +120,7 @@ export default function HeroSection() {
                 size="large"
                 onClick={() => scrollTo('about')}
                 endIcon={<ArrowForwardIcon />}
-                sx={{ px: 3.5, py: 1.4, fontSize: '1rem', width: { xs: '100%', sm: 'auto' } }}
+                sx={{ px: 3.5, py: 1.2, fontSize: '0.95rem', width: { xs: '100%', sm: 'auto' } }}
               >
                 Discover Our Brand
               </Button>
@@ -128,7 +130,7 @@ export default function HeroSection() {
                 size="large"
                 onClick={() => scrollTo('partnership')}
                 startIcon={<HandshakeOutlinedIcon />}
-                sx={{ px: 3.5, py: 1.4, fontSize: '1rem', borderWidth: 1.5, width: { xs: '100%', sm: 'auto' } }}
+                sx={{ px: 3.5, py: 1.2, fontSize: '0.95rem', borderWidth: 1.5, width: { xs: '100%', sm: 'auto' } }}
               >
                 Business Enquiry
               </Button>
@@ -141,11 +143,13 @@ export default function HeroSection() {
               sx={{
                 position: 'relative',
                 backgroundColor: '#FFFFFF',
-                borderRadius: 4,
-                p: { xs: 2.5, sm: 3.5 },
-                boxShadow: '0 20px 45px rgba(13, 117, 183, 0.15)',
+                borderRadius: 3.5,
+                p: { xs: 2, sm: 2.5, md: 2.8 },
+                boxShadow: '0 16px 40px rgba(13, 117, 183, 0.12)',
                 border: `1px solid rgba(13, 117, 183, 0.18)`,
                 textAlign: 'center',
+                maxWidth: { md: 460 },
+                mx: 'auto',
               }}
             >
               {/* Official Brand Logo */}
@@ -154,11 +158,11 @@ export default function HeroSection() {
                 src="/images/logo.png"
                 alt="JIVANIRA Pure Refreshment. A Better Tomorrow."
                 sx={{
-                  height: { xs: 62, sm: 74 },
+                  height: { xs: 48, sm: 56, md: 58 },
                   width: 'auto',
                   objectFit: 'contain',
                   mx: 'auto',
-                  mb: 2,
+                  mb: 1.5,
                   display: 'block',
                 }}
               />
@@ -166,12 +170,12 @@ export default function HeroSection() {
               {/* Realistic Duo Bottle Packshot */}
               <Box
                 sx={{
-                  borderRadius: 3,
+                  borderRadius: 2.5,
                   overflow: 'hidden',
                   position: 'relative',
                   backgroundColor: '#F8FBFE',
                   border: `1px solid ${brandColors.borderLight}`,
-                  mb: 2,
+                  mb: 1.5,
                 }}
               >
                 <Box
@@ -180,7 +184,7 @@ export default function HeroSection() {
                   alt="JIVANIRA 500ml and 1 Litre Packaged Drinking Water Bottles"
                   sx={{
                     width: '100%',
-                    height: { xs: 250, sm: 310 },
+                    height: { xs: 200, sm: 240, md: 250 },
                     objectFit: 'contain',
                     display: 'block',
                     transition: 'transform 0.4s ease',
@@ -192,20 +196,20 @@ export default function HeroSection() {
               </Box>
 
               {/* Bottle Labels */}
-              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 4, mb: 1.5 }}>
+              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 4, mb: 1 }}>
                 <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: brandColors.deepNavy }}>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: brandColors.deepNavy, fontSize: '0.85rem' }}>
                     500 ml
                   </Typography>
-                  <Typography variant="caption" sx={{ color: brandColors.slateMuted, display: 'block' }}>
+                  <Typography variant="caption" sx={{ color: brandColors.slateMuted, display: 'block', fontSize: '0.72rem' }}>
                     On-the-go Pack
                   </Typography>
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: brandColors.deepNavy }}>
+                  <Typography variant="subtitle2" sx={{ fontWeight: 800, color: brandColors.deepNavy, fontSize: '0.85rem' }}>
                     1 Litre
                   </Typography>
-                  <Typography variant="caption" sx={{ color: brandColors.slateMuted, display: 'block' }}>
+                  <Typography variant="caption" sx={{ color: brandColors.slateMuted, display: 'block', fontSize: '0.72rem' }}>
                     Everyday Standard Pack
                   </Typography>
                 </Box>
@@ -213,16 +217,16 @@ export default function HeroSection() {
 
               <Box
                 sx={{
-                  p: 1.4,
-                  borderRadius: 2,
+                  p: 1.2,
+                  borderRadius: 1.5,
                   backgroundColor: brandColors.lightBlue,
                   border: `1px dashed rgba(13, 117, 183, 0.3)`,
                 }}
               >
-                <Typography variant="caption" sx={{ color: brandColors.deepNavy, fontWeight: 700, display: 'block' }}>
+                <Typography variant="caption" sx={{ color: brandColors.deepNavy, fontWeight: 700, display: 'block', fontSize: '0.75rem' }}>
                   Proposed Consumer Packaging Lineup
                 </Typography>
-                <Typography variant="caption" sx={{ color: brandColors.slateMuted, fontSize: '0.72rem' }}>
+                <Typography variant="caption" sx={{ color: brandColors.slateMuted, fontSize: '0.7rem' }}>
                   Final specifications will be announced prior to commercial launch in 2027.
                 </Typography>
               </Box>
@@ -233,3 +237,4 @@ export default function HeroSection() {
     </Box>
   );
 }
+

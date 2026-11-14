@@ -65,29 +65,33 @@ export default function Navbar() {
       <AppBar position="sticky" elevation={0} sx={{ borderBottom: `1px solid ${brandColors.borderLight}` }}>
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ minHeight: { xs: 60, md: 68 }, py: 0.8 }}>
-            {/* Brand Official Logo */}
+            {/* Company Name Brand Title */}
             <Box
               onClick={() => handleScrollTo('hero')}
               sx={{
                 display: 'flex',
                 alignItems: 'center',
                 cursor: 'pointer',
+                userSelect: 'none',
               }}
             >
-              <Box
-                component="img"
-                src="/images/logo.png"
-                alt="JIVANIRA - Pure Refreshment. A Better Tomorrow."
+              <Typography
+                variant="h6"
+                component="span"
                 sx={{
-                  height: { xs: 36, sm: 42, md: 46 },
-                  width: 'auto',
-                  objectFit: 'contain',
-                  transition: 'transform 0.2s ease',
+                  fontWeight: 800,
+                  fontSize: { xs: '1.05rem', sm: '1.2rem', md: '1.28rem' },
+                  letterSpacing: '-0.02em',
+                  color: brandColors.deepNavy,
+                  whiteSpace: 'nowrap',
+                  transition: 'color 0.2s ease',
                   '&:hover': {
-                    transform: 'scale(1.02)',
+                    color: brandColors.primaryBlue,
                   },
                 }}
-              />
+              >
+                Jivanira Aqua Industries
+              </Typography>
             </Box>
 
             {/* Desktop Navigation Links */}
@@ -188,12 +192,19 @@ export default function Navbar() {
         }}
       >
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 2.5 }}>
-          <Box
-            component="img"
-            src="/images/logo.png"
-            alt="JIVANIRA"
-            sx={{ height: 40, width: 'auto', objectFit: 'contain', cursor: 'pointer' }} onClick={() => handleScrollTo('hero')}
-          />
+          <Typography
+            variant="subtitle1"
+            onClick={() => handleScrollTo('hero')}
+            sx={{
+              fontWeight: 800,
+              fontSize: '1.05rem',
+              letterSpacing: '-0.02em',
+              color: brandColors.deepNavy,
+              cursor: 'pointer',
+            }}
+          >
+            Jivanira Aqua Industries
+          </Typography>
           <IconButton onClick={handleDrawerToggle} edge="end">
             <CloseIcon sx={{ color: brandColors.deepNavy }} />
           </IconButton>
